@@ -1,5 +1,6 @@
 import type { NextPage } from 'next';
 import Image from 'next/image';
+import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
@@ -22,12 +23,14 @@ const Home: NextPage = () => {
         <p>Need someone to build a site from the ground up?</p>
         <p>Perhaps an app to go along with it for both Android and iOS?</p>
         <p className="mb-6" >Who knows - maybe a robot that runs around telling people about this stuff!</p>
-        <a className="p-3 flex flex-row flex-nowrap justify-between max-w-xs items-center cursor-pointer bg-white text-gray-900 transition-all hover:-skew-x-6 " >
+        <Link href={"/build"}>
+          <a className="p-3 flex flex-row flex-nowrap justify-between max-w-xs items-center cursor-pointer bg-white text-gray-900 transition-all hover:-skew-x-6 " >
           <span className="mr-4" >
             Say no more
           </span>
-          <FontAwesomeIcon icon={faChevronRight} />
-        </a>
+            <FontAwesomeIcon icon={faChevronRight} />
+          </a>
+        </Link>
       </section>
     </PageLayout>
   );
