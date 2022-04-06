@@ -5,12 +5,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
 import profilePic from '../assets/profile-pic-1.jpg';
+import {Meta} from "../components/meta";
 
 const Home: NextPage = () => {
   return (
     <>
       <Head>
-       <title>Home</title>
+        <title>Home</title>
+        <Meta title="Home" />
       </Head>
 
       <main className="min-h-screen p-3 bg-gradient-to-br from-gray-700 to-gray-900 text-white" >
