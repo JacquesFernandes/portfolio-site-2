@@ -1,6 +1,6 @@
 import {FC} from "react";
 
-interface MetaProps {
+export interface MetaProps {
 	title: string;
 	description?: string;
 	keywords?: string[];
