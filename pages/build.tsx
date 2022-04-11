@@ -23,7 +23,7 @@ const Build: NextPage = () => {
 		<PageLayout title="Build" description="So, what you looking for?" >
 			<h2 className="text-3xl mb-1" >So, what are you looking for?</h2>
 
-			<ul className="w-full flex flex-row flex-wrap gap-4 justify-center" >
+			<ul className="w-full flex flex-row flex-wrap gap-4 justify-start" >
 				<OfferCard href="#server" >
 					<FontAwesomeIcon icon={faServer} />
 					<p>Set up a (Linux) server</p>
