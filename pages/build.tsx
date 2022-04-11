@@ -10,7 +10,7 @@ interface OfferCardProps {
 }
 const OfferCard: FC<OfferCardProps> = (props) => {
 	return(
-		<li className="w-full md:h-40 md:w-40 p-2 border transition-all border-white hover:border-transparent bg-transparent hover:bg-white hover:text-gray-900 text-xl font-bold text-center rounded-lg" >
+		<li className="w-full md:h-32 md:flex-1 p-2 border transition-all border-white hover:border-transparent bg-transparent hover:bg-white hover:text-gray-900 text-xl font-bold text-center rounded-lg" >
 			<a className="h-full w-full flex flex-row md:flex-col justify-start md:justify-center items-center space-x-2 md:space-y-4" href={props.href} >
 				{props.children}
 			</a>
