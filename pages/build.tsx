@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import {NextPage} from "next";
 import {FC} from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -40,10 +41,23 @@ const Build: NextPage = () => {
 
 			<section id="server">
 				<h3 className="text-2xl mb-1">Set up a (Linux) server</h3>
+				<p>Some of the Linux distros that I've set up:</p>
+				<ul className="list-disc list-inside" >
+					<li>Fedora (my "daily driver")</li>
+					<li>Ubuntu (most sites I've set up run on Ubuntu)</li>
+				</ul>
 			</section>
 
 			<section id="website" >
 				<h3 className="text-2xl mb-1">Build a website</h3>
+				<p>This gets a little more complex. There are multiple facets or layers to setting up a website "stack"</p>
+				<ul className="list-disc list-inside" >
+					<li>The server</li>
+					<li>The <b>web</b> server</li>
+					<li>The "back-end" of the site (optional in modern day)</li>
+					<li>The "front-end" of the site</li>
+				</ul>
+				<p></p>
 			</section>
 
 			<section id="app" >
