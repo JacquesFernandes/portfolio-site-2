@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import {NextPage} from "next";
-import {FC} from "react";
+import {FC, PropsWithChildren} from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faGlobe, faServer, faMobile} from '@fortawesome/free-solid-svg-icons';
 
@@ -9,7 +9,7 @@ import {PageLayout} from "../components/page-layout";
 interface OfferCardProps {
 	href: string;
 }
-const OfferCard: FC<OfferCardProps> = (props) => {
+const OfferCard: FC<PropsWithChildren<OfferCardProps>> = (props) => {
 	return(
 		<li className="w-full md:h-32 md:flex-1 p-2 border transition-all border-white hover:border-transparent bg-transparent hover:bg-white hover:text-gray-900 text-xl font-bold text-center rounded-lg" >
 			<a className="h-full w-full flex flex-row md:flex-col justify-start md:justify-center items-center space-x-2 md:space-y-4" href={props.href} >

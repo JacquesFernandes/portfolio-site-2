@@ -1,4 +1,4 @@
-import {FC} from "react";
+import {FC, PropsWithChildren} from "react";
 import Head from "next/head";
 import {Meta, MetaProps} from "./meta";
 
@@ -6,7 +6,7 @@ export interface PageLayoutProps extends MetaProps {
 	rowLayout?: boolean;
 }
 
-export const PageLayout: FC<PageLayoutProps> = (props) => {
+export const PageLayout: FC<PropsWithChildren<PageLayoutProps>> = (props) => {
   return(
 		<>
 			<>
