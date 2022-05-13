@@ -5,6 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faGlobe, faServer, faMobile} from '@fortawesome/free-solid-svg-icons';
 
 import {PageLayout} from "../components/page-layout";
+import {H2} from "../components/typography";
+import Link from "next/link";
 
 interface OfferCardProps {
 	href: string;
@@ -22,7 +24,7 @@ const OfferCard: FC<PropsWithChildren<OfferCardProps>> = (props) => {
 const Build: NextPage = () => {
 	return(
 		<PageLayout title="Build" description="So, what you looking for?" >
-			<h2 className="text-3xl mb-1" >So, what are you looking for?</h2>
+			<H2>So, what are you looking for?</H2>
 
 			<ul className="w-full flex flex-row flex-wrap gap-4 justify-start" >
 				<OfferCard href="#server" >
@@ -57,11 +59,13 @@ const Build: NextPage = () => {
 					<li>The "back-end" of the site (optional in modern day)</li>
 					<li>The "front-end" of the site</li>
 				</ul>
-				<p></p>
+				<Link href="/stacks"><a className="underline underline-offset-2 hover:decoration-2" >Click on me for more detail on the parts of the stack</a></Link>
 			</section>
 
 			<section id="app" >
 				<h3 className="text-2xl mb-1">Build an app</h3>
+				<p>Looking to build a performant mobile app for Android <strong>and</strong> iOS?</p>
+				<p>Flutter is where it's at!</p>
 			</section>
 		</PageLayout>
 	);
