@@ -4,6 +4,7 @@ import {PageLayout} from "../components/page-layout";
 
 import {H2, H3, H4} from "../components/typography";
 import {Anchor} from "../components/anchor";
+import {Details} from "../components/details";
 
 const Professional: NextPage = () => {
 	return(
@@ -74,32 +75,34 @@ const Professional: NextPage = () => {
 					These projects are the ones which I feel proudest of.
 					If you’ve spoken to me in a professional context, chances are I would have mentioned one or more of these in passing.
 				</p>
-				<details>
-					<summary>STV News app v5 @ BrightSignals</summary>
-					<ul className="list-inside list-disc ml-4" >
-						<li>A complete rebuild of the STV News Android and iOS apps in the wonderful cross-platform framework, Flutter. Worked on this at Bright Signals. Has since been taken over by STV’s in-house developers.</li>
-						<li>Launched to good reviews and amazing performance.</li>
-						<li>I still use this app to this day and recommend it if you live in the UK.</li>
-					</ul>
-				</details>
-				<details>
-					<summary>
-						<Anchor href="https://openplans.uk/" >Openplans</Anchor> @ BrightSignals
-					</summary>
-					<p className="ml-4" >
-						A “virtual consultation / town-hall” site built using ReactJS and Marzipano.
-						Strikes a decent balance between a 3D presence and performance on lower-end devices.
-					</p>
-				</details>
-				<details>
-					<summary>
-						Meantime Skeeball machine @ BrightSignals
-					</summary>
-					<p className="ml-4" >
-						Built a custom popular arcade machine (“Skeeball”) from scratch (electronics, software and some design).
-						Ask me to find out more - as well as show you some of the photos I took!
-					</p>
-				</details>
+				<Details
+					summary={<>STV News app v5 @ BrightSignals</>}
+					details={(
+						<ul className="list-inside list-disc ml-4" >
+							<li>A complete rebuild of the STV News Android and iOS apps in the wonderful cross-platform framework, Flutter. Worked on this at Bright Signals. Has since been taken over by STV’s in-house developers.</li>
+							<li>Launched to good reviews and amazing performance.</li>
+							<li>I still use this app to this day and recommend it if you live in the UK.</li>
+						</ul>
+					)}
+				/>
+				<Details
+					summary={<><Anchor href="https://openplans.uk/" >Openplans</Anchor> @ BrightSignals</>}
+					details={(
+						<p>
+							A “virtual consultation / town-hall” site built using ReactJS and Marzipano.
+							Strikes a decent balance between a 3D presence and performance on lower-end devices.
+						</p>
+					)}
+				/>
+				<Details
+					summary={<>Meantime Skeeball machine @ BrightSignals</>}
+					details={(
+						<p>
+							Built a custom popular arcade machine (“Skeeball”) from scratch (electronics, software and some design).
+							Ask me to find out more - as well as show you some of the photos I took!
+						</p>
+					)}
+				/>
 
 				<H4>Other projects</H4>
 				<p>
@@ -108,23 +111,23 @@ const Professional: NextPage = () => {
 					or might be similar to something that’s already in the above list.
 					These are by no means lesser than the aforementioned.
 				</p>
-				<details>
-					<summary>
-						<Anchor href="https://www.linn.co.uk/" >Linn.co.uk</Anchor> @ BrightSignals
-					</summary>
-					<p>
-						Did not have a heavy hand in the software, but with architecting and deploying an AWS-ready, scalable prototype.
-					</p>
-				</details>
-				<details>
-					<summary>
-						<Anchor href="https://marketplace.edfringe.com/" >Fringe Marketplace</Anchor> @ BrightSignals
-					</summary>
-					<p>
-						A project from Edinburgh’s The Fringe shortly after the pandemic hit.
-						Helped artists find scouts and showcase their work for said scouts to find and sponsor them.
-					</p>
-				</details>
+				<Details
+					summary={<><Anchor href="https://www.linn.co.uk/" >Linn.co.uk</Anchor> @ BrightSignals</>}
+					details={(
+						<p>
+							Did not have a heavy hand in the software, but with architecting and deploying an AWS-ready, scalable prototype.
+						</p>
+					)}
+				/>
+				<Details
+					summary={<><Anchor href="https://marketplace.edfringe.com/" >Fringe Marketplace</Anchor> @ BrightSignals</>}
+					details={(
+						<p>
+							A project from Edinburgh’s The Fringe shortly after the pandemic hit.
+							Helped artists find scouts and showcase their work for said scouts to find and sponsor them.
+						</p>
+					)}
+				/>
 			</section>
 		</PageLayout>
 	);
