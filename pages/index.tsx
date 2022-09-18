@@ -24,7 +24,7 @@ const Home: NextPage = () => {
         <p>Perhaps an app to go along with it for both Android and iOS?</p>
         <p className="mb-6" >Who knows - maybe a robot that runs around telling people about this stuff!</p>
         <Link href={"/about"}>
-          <a className="p-3 flex flex-row flex-nowrap justify-between max-w-md items-center cursor-pointer bg-white text-gray-900 transition-all hover:-skew-x-6" >
+          <a className="p-3 flex flex-row flex-nowrap justify-between max-w-md items-center cursor-pointer bg-white text-gray-900 transition-all hover:-skew-x-3" >
             <span className="mr-4" >
               Say no more
             </span>
