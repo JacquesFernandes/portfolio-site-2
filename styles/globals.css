@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+	details summary {
+		@apply max-w-full whitespace-nowrap overflow-x-hidden overflow-ellipsis;
+	}
+
+	details[open] summary {
+		@apply max-w-none whitespace-normal overflow-x-visible overflow-auto;
+	}
+}
