@@ -17,10 +17,8 @@ const NavEntry: FC<NavEntryProps> = ({ href, label, current }) => {
 	}
 
 	return(
-		<NextLink href={href}>
-			<a className="hover:underline underline-offset-1" >
-				{label}
-			</a>
+		<NextLink href={href} className="hover:underline underline-offset-1" >
+			{label}
 		</NextLink>
 	);
 }
