@@ -28,10 +28,8 @@ const About: NextPage = () => {
 			<section id="personal">
 				<H3>Personal</H3>
 				<p>There's a fair amount to cover about me as a person (or so I'm told), so I'll give you the TL;DR / "in-a-nutshell" version.</p>
-				<Link href="/personal" >
-					<a className="underline underline-offset-2 hover:decoration-2" >
-						The person behind the code
-					</a>
+				<Link href="/personal" className="underline underline-offset-2 hover:decoration-2" >
+					The person behind the code
 				</Link>
 			</section>
 
@@ -39,10 +37,8 @@ const About: NextPage = () => {
 				<H3>Professional</H3>
 				<p>I've always enjoyed building things and being able to build whatever I want/need to from scratch has always been a dream of mine.</p>
 				<p>Said dream has led me to pursue a career as a full-stack developer.</p>
-				<Link href="/professional" >
-					<a className="underline underline-offset-2 hover:decoration-2" >
-						The code in front of the person
-					</a>
+				<Link href="/professional" className="underline underline-offset-2 hover:decoration-2" >
+					The code in front of the person
 				</Link>
 			</section>
 		</PageLayout>
