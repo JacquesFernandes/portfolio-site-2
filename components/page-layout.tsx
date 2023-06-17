@@ -1,36 +1,17 @@
-import {FC, PropsWithChildren} from "react";
+import {FC, ReactNode} from "react";
 import Head from "next/head";
-import {Meta, MetaProps} from "./meta";
-import {Nav} from "./nav";
 
-export interface PageLayoutProps extends MetaProps {
-	rowLayout?: boolean;
+interface PageLayoutProps {
+	title: string;
+	children: ReactNode;
 }
 
-export const PageLayout: FC<PropsWithChildren<PageLayoutProps>> = (props) => {
-  return(
-		<>
-			<>
-				<Head>
-					<title>{props.title}</title>
-					<Meta {...props} />
-				</Head>
+export const PageLayout: FC<PageLayoutProps> = ({ title, children }) => <>
+	<Head>
+		<title>{title}</title>
+	</Head>
 
-				<main className="min-h-screen p-3 bg-gradient-to-br from-gray-700 to-gray-900 text-white" >
-					<div className="mb-4 max-w-screen-lg mx-auto" >
-						<h1 className="text-4xl font-bold" >{props.title}</h1>
-						<Nav />
-					</div>
-
-					<article className={`${props.rowLayout? 'flex flex-row gap-4 flex-wrap' : 'space-y-4'}  max-w-screen-lg mx-auto`} >
-						{ props.children }
-					</article>
-				</main>
-			</>
-		</>
-	);
-}
-
-PageLayout.defaultProps = {
-	rowLayout: false,
-}
+	<main className="w-full min-h-screen bg-slate-800 text-gray-50" >
+		{ children }
+	</main>
+</>;
