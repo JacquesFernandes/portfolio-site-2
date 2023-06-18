@@ -19,9 +19,9 @@ const HomePage: NextPage = () => <>
 				</p>
 			</div>
 
-			<div className="w-full p-3 flex flex-row flex-nowrap justify-between items-end" >
+			<div className="w-full max-h-32 p-3 flex flex-row flex-nowrap justify-between items-end" >
 				<nav>
-					<ul className="space-y-2 text-xl" >
+					<ul className="max-h-32 flex flex-col flex-wrap justify-items-start gap-2 text-xl" >
 						<li className="transition-all hover:text-3xl" >Brief</li>
 						<li className="transition-all hover:text-3xl" >Tech</li>
 						<li className="transition-all hover:text-3xl" >Projects</li>
