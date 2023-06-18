@@ -1,6 +1,7 @@
 import {NextPage} from "next";
 import {PageLayout} from "../components/page-layout";
 import {TextScroller} from "../components/text-scroller";
+import {Section} from "../components/section";
 
 const texts = [
 	"an android app?",
@@ -11,7 +12,7 @@ const texts = [
 
 const HomePage: NextPage = () => <>
 	<PageLayout title="Home" >
-		<section className="h-screen w-full flex flex-col overflow-x-hidden" >
+		<Section >
 			<div className="flex-1 flex flex-col justify-center items-center text-5xl space-y-5">
 				<p className="w-full max-w-xl sm:max-w-none p-3" >
 					<span>Looking to build </span>
@@ -32,7 +33,7 @@ const HomePage: NextPage = () => <>
 					<span>Fernandes</span>
 				</h1>
 			</div>
-		</section>
+		</Section>
 	</PageLayout>
 </>
 
