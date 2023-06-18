@@ -13,7 +13,7 @@ const HomePage: NextPage = () => <>
 	<PageLayout title="Home" >
 		<section className="h-screen w-full flex flex-col overflow-x-hidden" >
 			<div className="flex-1 flex flex-col justify-center items-center text-5xl space-y-5">
-				<p className="w-full max-w-xl sm:max-w-none sm:p-3 h-52 sm:h-fit" >
+				<p className="w-full max-w-xl sm:max-w-none p-3" >
 					<span>Looking to build </span>
 					<TextScroller texts={texts} />
 				</p>
