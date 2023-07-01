@@ -1,3 +1,5 @@
+'use-client';
+
 import {FC, useEffect, useState} from "react";
 import {AnimatePresence, motion} from "framer-motion";
 
@@ -10,12 +12,12 @@ export const TextScroller: FC<TextScrollerProps> = ({ texts, delay=1500 }) => {
 	const [ currentIndex, setCurrentIndex ] = useState(0);
 
 	useEffect(() => {
-		const timeout = setTimeout(() => {
-			setCurrentIndex((currentIndex) => (currentIndex+1) % texts.length)
+		const interval = setInterval(() => {
+			setCurrentIndex((ci) => (ci+1) % texts.length);
 		}, delay);
 
-		return () => clearTimeout(timeout);
-	}, [delay, texts.length, currentIndex]);
+		return () => clearInterval(interval);
+	}, [delay, texts.length]);
 
 	return <AnimatePresence mode="wait" >
 		{
