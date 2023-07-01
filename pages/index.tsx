@@ -2,37 +2,25 @@ import {NextPage} from "next";
 import {PageLayout} from "../components/page-layout";
 import {TextScroller} from "../components/text-scroller";
 import {Section} from "../components/section";
-
-const texts = [
-	"an android app?",
-	"an iOS app?",
-	"a brochure-ware website?",
-	"a complex web-based system?"
-];
+import {Nav} from "../components/nav";
+import {homeTexts} from "../constants/home-texts";
 
 const HomePage: NextPage = () => <>
 	<PageLayout title="Home" >
-		<Section >
-			<div className="flex-1 flex flex-col justify-center items-center text-5xl space-y-5">
-				<p className="w-full max-w-xl sm:max-w-none p-3" >
+		<Section className="flex-none grid gap-3 grid-cols-1 grid-rows-[1fr_auto_auto] md:grid-cols-[auto_1fr] md:grid-rows-[1fr_1fr]" >
+			<div className="order-1 md:order-2 md:flex md:justify-center md:items-end">
+				<p className="w-fit text-5xl p-3 md:p-0" >
 					<span>Looking to build </span>
-					<TextScroller texts={texts} />
+					<TextScroller texts={homeTexts} />
 				</p>
 			</div>
 
-			<div className="w-full max-h-32 p-3 flex flex-row flex-nowrap justify-between items-end" >
-				<nav>
-					<ul className="max-h-32 flex flex-col flex-wrap justify-items-start gap-2 text-xl" >
-						<li className="transition-all hover:text-3xl" >Brief</li>
-						<li className="transition-all hover:text-3xl" >Tech</li>
-						<li className="transition-all hover:text-3xl" >Projects</li>
-					</ul>
-				</nav>
-				<h1 className="text-right text-3xl" >
-					<span>Jacques </span><br/>
-					<span>Fernandes</span>
-				</h1>
-			</div>
+			<h1 className="order-2 md:order-3 w-full text-3xl md:flex md:justify-center md:items-start md:space-x-2.5" >
+				<span>Jacques </span>
+				<span>Fernandes</span>
+			</h1>
+
+			<Nav blockElement className="order-3 md:order-1 md:row-span-2" />
 		</Section>
 	</PageLayout>
 </>
