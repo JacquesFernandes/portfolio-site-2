@@ -9,7 +9,7 @@ const HomePage: NextPage = () => <>
 	<PageLayout title="Home" >
 		<Section className="flex-none grid gap-3 grid-cols-1 grid-rows-[1fr_auto_auto] md:grid-cols-[auto_1fr] md:grid-rows-[1fr_1fr]" >
 			<div className="order-1 md:order-2 md:flex md:justify-center md:items-end">
-				<p className="w-fit text-5xl p-3 md:p-0" >
+				<p className="w-fit max-w-2xl xl:max-w-none text-5xl p-3 md:p-0" >
 					<span>Looking to build </span>
 					<TextScroller texts={homeTexts} />
 				</p>
