@@ -9,6 +9,18 @@ type SectionProps = {
 	href?: string;
 }
 
-export const Section: FC<SectionProps> = ({ children, size='page', padded=true, className, href }) => <section id={href} className={cx("h-screen w-full overflow-x-hidden", { 'h-fit': size === 'fit', 'h-screen': size === 'page' || size !== 'fit', 'p-3': padded }, className )} >
-	{children}
-</section>
+export const Section: FC<SectionProps> = ({ children, size='page', padded=true, className, href }) => <>
+	<section
+		id={href}
+		className={cx(
+			"w-full overflow-x-hidden",
+			{
+				'h-fit': size === 'fit',
+				'min-h-screen': size === 'page' || size !== 'fit',
+				'p-3': padded
+			}, className
+		)}
+	>
+		{children}
+	</section>
+</>;
