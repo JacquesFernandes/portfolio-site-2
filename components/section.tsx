@@ -16,7 +16,7 @@ export const Section: FC<SectionProps> = ({ children, size='page', padded=true, 
 			"w-full overflow-x-hidden",
 			{
 				'h-fit': size === 'fit',
-				'min-h-screen': size === 'page' || size !== 'fit',
+				'min-h-[100dvh]': size === 'page' || size !== 'fit',
 				'p-3': padded
 			}, className
 		)}
