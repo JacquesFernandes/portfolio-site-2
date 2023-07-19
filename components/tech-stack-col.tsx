@@ -17,13 +17,12 @@ type TechStackColProps = {
 }
 
 export const TechStackCol: FC<TechStackColProps> = ({ title, categories }) => <>
-	<div className=" space-y-1.5" >
+	<div className="snap-start min-w-fit space-y-1.5" >
 		<h3 className="text-xl font-bold" >{title}</h3>
-
 		{
 			categories.map((category, techCategoryIndex) => (
-				<details className="p-1.5 sm:p-1 bg-white text-slate-700" key={`tech_category_${techCategoryIndex}`} >
-					<summary>{category.name}</summary>
+				<div className="p-1.5 sm:p-1 bg-white text-slate-700" key={`tech_category_${techCategoryIndex}`} >
+					<h4 className="text-lg font-semibold" >{category.name}</h4>
 					<ul>
 						{
 							category.tech.map((techItem, techItemIndex) => (
@@ -38,7 +37,7 @@ export const TechStackCol: FC<TechStackColProps> = ({ title, categories }) => <>
 							))
 						}
 					</ul>
-				</details>
+				</div>
 			))
 		}
 	</div>

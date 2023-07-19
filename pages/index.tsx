@@ -28,7 +28,7 @@ const HomePage: NextPage = () => <>
 			<h2 className="text-3xl" >The Stack</h2>
 			<p>Click on a technology to know more</p>
 
-			<div className="mt-3 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2" >
+			<div className="mt-3 w-full flex flex-row space-x-4 snap-x overflow-x-auto" >
 				<TechStackCol
 					title="Front-end/client"
 					categories={[
