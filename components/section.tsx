@@ -13,7 +13,7 @@ export const Section: FC<SectionProps> = ({ children, size='page', padded=true, 
 	<section
 		id={href}
 		className={cx(
-			"w-full overflow-x-hidden",
+			"w-full md:max-w-screen-md overflow-x-hidden md:mx-auto",
 			{
 				'h-fit': size === 'fit',
 				'min-h-[100dvh]': size === 'page' || size !== 'fit',
