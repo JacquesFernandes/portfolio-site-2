@@ -6,12 +6,12 @@ type SectionProps = {
 	size?: 'page' | 'fit';
 	className?: HTMLAttributes<HTMLElement>['className'];
 	padded?: boolean;
-	href?: string;
+	id?: string;
 }
 
-export const Section: FC<SectionProps> = ({ children, size='page', padded=true, className, href }) => <>
+export const Section: FC<SectionProps> = ({ children, size='page', padded=true, className, id }) => <>
 	<section
-		id={href}
+		id={id}
 		className={cx(
 			"w-full snap-start md:max-w-screen-md overflow-x-hidden md:mx-auto",
 			{

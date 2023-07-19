@@ -24,11 +24,12 @@ const HomePage: NextPage = () => <>
 				</Link>
 			</div>
 		</Section>
-		<Section href="stack">
+
+		<Section id="stack" className="flex flex-col justify-between" >
 			<h2 className="text-3xl" >The Stack</h2>
 			<p>Click on a technology to know more</p>
 
-			<div className="mt-3 w-full flex flex-row space-x-4 snap-x overflow-x-auto" >
+			<div className="mt-3 flex-1 w-full flex flex-row space-x-4 snap-x overflow-x-auto" >
 				<TechStackCol
 					title="Front-end/client"
 					categories={[
@@ -100,6 +101,16 @@ const HomePage: NextPage = () => <>
 					]}
 				/>
 			</div>
+			<Link scroll href="#career" className="w-full flex flex-row justify-evenly items-center bg-gray-50 text-slate-800 p-1 text-xl" >
+				<FontAwesomeIcon icon={faAnglesDown} />
+				The Career
+				<FontAwesomeIcon icon={faAnglesDown} />
+			</Link>
+		</Section>
+
+		<Section id="career" >
+			<h2 className="text-3xl" >The Career</h2>
+			<p>Click on a technology to know more</p>
 		</Section>
 	</PageLayout>
 </>
