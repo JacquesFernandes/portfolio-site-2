@@ -10,14 +10,14 @@ const ResumePage: NextPage = () => {
     </Head>
 
     <main className="bg-amber-50 w-full min-h-screen p-4" >
-      <div className="max-w-2xl mx-auto" >
+      <div className="max-w-3xl mx-auto" >
         <Resume.H1 >Jacques Fernandes</Resume.H1>
 
         <ul className="my-4 list-disc list-inside" >
           <li>Quick learner</li>
           <li>Passionate about software design & development</li>
           <li>Language Agnostic - Focussed on using the right tool for the job</li>
-          <li>Multilingual - Primary language is English, but very familiar with (Brazilian) Portuguese and (Argentinian) Spanish</li>
+          <li>Multilingual - Primary language is English, but very familiar with Portuguese (Brazil) and Spanish (Argentina)</li>
         </ul>
 
         <Resume.Section name="Skills">
@@ -32,7 +32,7 @@ const ResumePage: NextPage = () => {
 
         <Resume.Section name="Experience">
           <Resume.CompanySection name="ScottishPower" subLine="2021 - Senior Software Engineer / Full Stack">
-            <Resume.List level={1} >
+            <Resume.List >
               <li>Worked on the ScottishPower retail website</li>
               <li>Developed multiple components using <strong>Typescript</strong>, <strong>React</strong> and <strong>SCSS (modules)</strong></li>
               <li>Worked on a <em>greenfield</em> project to rebuilt the retail website from a <strong>React SPA</strong> to a <strong>full-stack NextJS</strong> app</li>
@@ -42,13 +42,13 @@ const ResumePage: NextPage = () => {
           </Resume.CompanySection>
 
           <Resume.CompanySection name="BrightSignals" subLine="2018 - Software Developer / Full Stack">
-            <Resume.List level={1} >
+            <Resume.List >
               <li>Gained immense experience in front-end development</li>
               <li>Built up strong CSS3 and SCSS skills</li>
               <li>Heavy focus on rapid/agile development of UI/front-end</li>
               <li>
                 <span>Due to nature of job and clients, worked on a variety of technologies and frameworks:</span>
-                <Resume.List level={2}>
+                <Resume.List>
                   <li><strong>Mobile:</strong> Used Flutter to build STV News app v5.0 from the ground-up</li>
                   <li><strong>Front-end:</strong> Primarily React, heavy focus on styling and CSS3/SCSS</li>
                   <li><strong>Back-end:</strong> NodeJS, PHP (vanilla, Symfony & Laravel)</li>
@@ -61,11 +61,11 @@ const ResumePage: NextPage = () => {
           </Resume.CompanySection>
 
           <Resume.CompanySection name={"Castiko"} subLine={"2018 - Chief Technology Officer (CTO)"}>
-            <Resume.List level={1}>
+            <Resume.List>
               <li>Continued coding despite being appointed as the CTO, to ensure that I remained close to the implementation (and the fact that I enjoy coding).</li>
               <li>
                 <span>Introduced modern development practices like:</span>
-                <Resume.List level={2} >
+                <Resume.List >
                   <li><strong>Agile methodology</strong> for rapid development and release cycles</li>
                   <li><strong>Git flow</strong> branching to reduce merge times and conflicts during builds</li>
                   <li>Ensuring code was <strong>peer-reviewed</strong></li>
@@ -73,7 +73,7 @@ const ResumePage: NextPage = () => {
               </li>
               <li>
                 <span>Drove initiative to migrate Android apps from <strong>React Native</strong> to <strong>Flutter</strong>. This resulted in:</span>
-                <Resume.List level={2}>
+                <Resume.List>
                   <li>Smaller app (from 30 to 6.7 MB)</li>
                   <li>Noticeably smoother and neater UI (using Material UI)</li>
                   <li>Much faster development cycles (a feature which would take over a week in React Native, took a day or two in Flutter).</li>
@@ -81,7 +81,7 @@ const ResumePage: NextPage = () => {
               </li>
               <li>
                 <span>Introduced <strong>Google Firebase</strong> components</span>
-                <Resume.List level={2}>
+                <Resume.List>
                   <li><strong>Cloud messaging</strong> for push notifications</li>
                   <li><strong>Auth</strong> and <strong>Dynamic links</strong> to make user acquisition seamless</li>
                 </Resume.List>
@@ -90,7 +90,7 @@ const ResumePage: NextPage = () => {
           </Resume.CompanySection>
 
           <Resume.CompanySection name={"Castiko"} subLine={"2017 - Full Stack (MERN) Developer & Team Lead"}>
-            <Resume.List level={1} >
+            <Resume.List >
               <li>Migrated the stack from LAMP to MERN (Mongo / Express / React / Node) and <strong>GraphQL</strong></li>
               <li>Addressed query injection security issues and other vulnerabilities</li>
               <li>Standardised the UI across the entire site for a consistent look and feel using <strong>Semantic UI React</strong></li>
