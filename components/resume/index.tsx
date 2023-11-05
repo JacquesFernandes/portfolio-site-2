@@ -5,6 +5,8 @@ import {H3SubLine} from './h3-subline';
 import {Section} from './section';
 import {CompanySection} from './company-section';
 import {ProjectSection} from './project-section';
+import {List} from './list';
+import {Hr} from './hr';
 
 export const Resume = {
 	H1,
@@ -14,4 +16,6 @@ export const Resume = {
 	Section,
 	CompanySection,
 	ProjectSection,
+	List,
+	Hr,
 };
