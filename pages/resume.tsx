@@ -9,6 +9,7 @@ const List: FC<{level?: number, children: ReactNode}> = ({ level=0, children }) 
 
 const Hr: FC = () => <hr className={"my-2"} />;
 
+{/* eslint-disable react/no-unescaped-entities */}
 const ResumePage: NextPage = () => {
   return <>
     <Head>
