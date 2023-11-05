@@ -11,7 +11,7 @@ export const PageLayout: FC<PageLayoutProps> = ({ title, children }) => <>
 		<title>{title}</title>
 	</Head>
 
-	<main className="w-full min-h-screen max-h-[100dvh] overflow-y-auto bg-slate-800 text-gray-50 snap-y" >
+	<main className="w-full max-h-[100svh] overflow-y-auto bg-slate-800 text-gray-50 snap-y" >
 		{ children }
 	</main>
 </>;
