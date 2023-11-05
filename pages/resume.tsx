@@ -60,7 +60,7 @@ const ResumePage: NextPage = () => {
             </Resume.List>
           </Resume.CompanySection>
 
-          <Resume.CompanySection name={"Castiko"} subLine={"2018 - Chief Technology Officer (CTO)"}>
+          <Resume.CompanySection name="Castiko" subLine="2018 - Chief Technology Officer (CTO)">
             <Resume.List>
               <li>Continued coding despite being appointed as the CTO, to ensure that I remained close to the implementation (and the fact that I enjoy coding).</li>
               <li>
@@ -89,7 +89,7 @@ const ResumePage: NextPage = () => {
             </Resume.List>
           </Resume.CompanySection>
 
-          <Resume.CompanySection name={"Castiko"} subLine={"2017 - Full Stack (MERN) Developer & Team Lead"}>
+          <Resume.CompanySection name="Castiko" subLine="2017 - Full Stack (MERN) Developer & Team Lead">
             <Resume.List >
               <li>Migrated the stack from LAMP to MERN (Mongo / Express / React / Node) and <strong>GraphQL</strong></li>
               <li>Addressed query injection security issues and other vulnerabilities</li>
@@ -101,24 +101,24 @@ const ResumePage: NextPage = () => {
 
         <Resume.Hr />
 
-        <Resume.Section name={"Noteworthy (Work) Projects"}>
-          <Resume.ProjectSection name={"STV NewsApp (v5.0)"} company={"BrightSignals"}>
+        <Resume.Section name="Noteworthy (Work) Projects">
+          <Resume.ProjectSection name="STV NewsApp (v5.0)" company="BrightSignals">
             <p>A complete rebuild of the STV News app for both Android and iOS. Built using Flutter. Now maintained by STV's in-house dev.</p>
           </Resume.ProjectSection>
 
-          <Resume.ProjectSection name={"Openplans"} company={"BrightSignals"}>
+          <Resume.ProjectSection name="Openplans" company="BrightSignals">
             <p>A "virtual consultation / townhall" site built using ReactJS and Marzipano. Strikes a decent balance between a 3D presence and performance on lower-end devices.</p>
           </Resume.ProjectSection>
 
-          <Resume.ProjectSection name={"Linn.co.uk"} company={"BrightSignals"}>
+          <Resume.ProjectSection name="Linn.co.uk" company="BrightSignals">
             <p>Didn't have a heavy hand in the software, but with architecting and deploying an AWS-ready, scalable prototype</p>
           </Resume.ProjectSection>
 
-          <Resume.ProjectSection name={"Meantime Skeeball machine"} company={"BrightSignals"}>
+          <Resume.ProjectSection name="Meantime Skeeball machine" company="BrightSignals">
             <p>Built a custom popular arcade machine ("Skeeball") from scratch (electronics, software and some design). Ask me to find out more - as well as show you some of the photos I took!</p>
           </Resume.ProjectSection>
 
-          <Resume.ProjectSection name={"Fringe Marketplace"} company={"BrightSignals"}>
+          <Resume.ProjectSection name="Fringe Marketplace" company="BrightSignals">
             <p>A project from Edinburgh's The Fringe shortly after the pandemic hit. Helped artists find scouts and showcase their work for said scouts to find and sponsor them.</p>
           </Resume.ProjectSection>
         </Resume.Section>
