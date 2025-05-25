@@ -1,13 +1,4 @@
-type Person = {
-   firstName: string;
-   lastName: string;
-};
-
-type Party = {
-   participant:  Person;
-   mother: Person;
-   father: Person;
-}
+import {Party, BibleQuote} from "@/lib/types/save-the-date";
 
 export const partyA: Party = {
    participant: {
@@ -45,7 +36,7 @@ type RemotePhoto = {
    url: string;
    height: number;
    width: number;
-}
+};
 
 export const backgroundPhoto: RemotePhoto = {
    url: "/lake_como_church_compress.jpg",
@@ -59,16 +50,11 @@ export const mainPhoto: RemotePhoto = {
    width: 3000,
 };
 
-type BibleQuote = {
-   passageText: string;
-   location: string;
-};
-
 export const bibleQuotes: BibleQuote[] = [
-   // {
-   //    location: "1 Corinthians 13:4-7",
-   //    passageText: "Love is patient, love is kind. It does not envy, it does not boast, it is not proud. It does not dishonor others, it is not self-seeking, it is not easily angered, it keeps no record of wrongs. Love does not delight in evil but rejoices with the truth. It always protects, always trusts, always hopes, always perseveres."
-   // },
+   {
+      location: "1 Corinthians 13:4-7",
+      passageText: "Love is patient, love is kind. It does not envy, it does not boast, it is not proud. It does not dishonor others, it is not self-seeking, it is not easily angered, it keeps no record of wrongs. Love does not delight in evil but rejoices with the truth. It always protects, always trusts, always hopes, always perseveres."
+   },
    {
       location: "Ephesians 4:2-3",
       passageText: "Be completely humble and gentle; be patient, bearing with one another in love. Make every effort to keep the unity of the Spirit through the bond of peace."
