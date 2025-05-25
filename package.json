@@ -1,7 +1,6 @@
 {
   "name": "portfolio-site-2-n15",
   "version": "0.1.0",
-  "packageManager": "pnpm@10.11.0",
   "private": true,
   "pnpm": {},
   "scripts": {
