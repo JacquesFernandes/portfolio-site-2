@@ -1,14 +1,21 @@
 import {
    partyA,
    partyB,
-   mainPhoto,
    weddingDate,
+   bibleQuotes,
 } from './copy';
-import Image from "next/image";
-import {QuoteScroller} from "./components/quote-scroller";
+import {TrickQuote} from "@/lib/components/trick-quote";
+import {Metadata} from "next";
 
-export default function SaveTheDatePage() {
+export const metadata: Metadata = {
+   title: 'To: Our near and dear',
+   description: 'From: Nicci & Jacques',
+   openGraph: {
+      images: [`${process.env.__NEXT_PRIVATE_ORIGIN}/milan_galleria_couple_compress.jpg`]
+   }
+}
 
+export default async function SaveTheDatePage() {
    return <main
       className="w-full min-h-screen p-5 bg-purple-50 bg-[url(/lake_como_church_compress.jpg)] bg-cover bg-bottom bg-no-repeat text-slate-200 font-[Dancing_Script] flex justify-stretch items-stretch"
    >
@@ -19,9 +26,9 @@ export default function SaveTheDatePage() {
             <h2 className="flex flex-col gap-2 items-center text-2xl sm:text-3xl" >
                <span>The wedding of</span>
                <span className="flex flex-row flex-wrap justify-center gap-4 text-4xl sm:text-5xl" >
-                  <span className="italic" >{partyA.participant.firstName}</span>
-                  <span>&</span>
                   <span className="italic" >{partyB.participant.firstName}</span>
+                  <span>&</span>
+                  <span className="italic" >{partyA.participant.firstName}</span>
                </span>
             </h2>
          </section>
@@ -30,17 +37,7 @@ export default function SaveTheDatePage() {
             <p>on <time dateTime={weddingDate.toISOString()} >{weddingDate.toDateString()}</time></p>
          </section>
 
-         <section className="w-full p-2 pb-0 bg-slate-300 text-slate-600 mb-5 rounded-md" >
-            <QuoteScroller/>
-         </section>
-
-         <Image
-            src={mainPhoto.url}
-            alt="Nicci & Jacques"
-            height={mainPhoto.height}
-            width={mainPhoto.width}
-            className="rounded-xl mb-5"
-         />
+         <TrickQuote bibleQuoteList={bibleQuotes} />
       </div>
    </main>;
 }

@@ -30,7 +30,7 @@ export const partyB: Party = {
    }
 };
 
-export const weddingDate = new Date("2025-01-03");
+export const weddingDate = new Date("2026-01-03");
 
 type RemotePhoto = {
    url: string;
