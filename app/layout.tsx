@@ -14,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="w-screen min-h-screen" >
+      <body className="w-screen min-h-screen overflow-x-hidden" >
         {children}
       </body>
     </html>
