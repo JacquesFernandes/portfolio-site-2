@@ -10,9 +10,6 @@ import {Metadata} from "next";
 export const metadata: Metadata = {
    title: 'To: Our near and dear',
    description: 'From: Nicci & Jacques',
-   openGraph: {
-      images: [`${process.env.__NEXT_PRIVATE_ORIGIN}/milan_galleria_couple_compress.jpg`]
-   }
 }
 
 export default async function SaveTheDatePage() {
