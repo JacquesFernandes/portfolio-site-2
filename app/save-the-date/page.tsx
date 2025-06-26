@@ -3,7 +3,7 @@ import {
    partyB,
    weddingDate,
    bibleQuotes,
-} from './copy';
+} from '@/lib/constants/save-the-date-copy';
 import {TrickQuote} from "@/lib/components/trick-quote";
 import {Metadata} from "next";
 
@@ -19,7 +19,7 @@ export default async function SaveTheDatePage() {
    return <main
       className="w-full min-h-screen p-5 bg-purple-50 bg-[url(/lake_como_church_compress.jpg)] bg-cover bg-bottom bg-no-repeat text-slate-200 font-[Dancing_Script] flex justify-stretch items-stretch"
    >
-      <div className="w-full max-w-2xl p-3 mx-auto backdrop-blur-md" >
+      <div className="w-full max-w-2xl p-3 flex flex-col mx-auto backdrop-blur-md" >
          <h1 className="w-full text-center text-5xl sm:text-6xl italic mb-5" >Save the Date</h1>
 
          <section className="w-full mb-5" >

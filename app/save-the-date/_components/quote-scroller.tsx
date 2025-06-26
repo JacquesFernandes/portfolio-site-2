@@ -3,7 +3,7 @@ import {FC, useCallback, useState} from "react";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import { faArrowLeftLong, faArrowRightLong } from '@fortawesome/free-solid-svg-icons'
 
-import {bibleQuotes} from '../copy';
+import {bibleQuotes} from '@/lib/constants/save-the-date-copy';
 
 export const QuoteScroller: FC = () => {
    const [ currentIndex, setCurrentIndex ] = useState(0);
