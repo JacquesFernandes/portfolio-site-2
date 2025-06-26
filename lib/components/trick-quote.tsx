@@ -26,7 +26,7 @@ export const TrickQuote: FC<TrickQuoteProps> = ({ bibleQuoteList }) => {
          alt="Nicci & Jacques"
          height={mainPhoto.height}
          width={mainPhoto.width}
-         className="rounded-xl mb-5 flex-1"
+         className="rounded-xl mb-5 flex-1 object-cover"
          onClick={handleImageClick}
       />
 
