@@ -25,7 +25,7 @@ export const AspectRoller: FC<AspectRollerProps> = ({ aspects }) => {
 
    console.log('circular:', focusIndex-1, focusIndex, focusIndex+1, aspects, displayAspects)
 
-   return <div className="flex flex-col items-center gap-2" >
+   return <div className="min-w-md flex flex-col items-stretch gap-2" >
       <button
          className="w-full transition-all duration-150 bg-transparent border border-transparent hover:border-inherit rounded-xl flex justify-center items-center cursor-pointer"
          onClick={() => setFocusIndex((i) => i-1)}
