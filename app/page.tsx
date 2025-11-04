@@ -9,6 +9,7 @@ export default function Home() {
            aspects={[
               'Front-end Engineer',
               'Back-end Engineer',
+              'Mobile Developer',
               'Linux admin',
               'Car enthusiast',
               'Former CTO',
